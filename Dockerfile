@@ -12,6 +12,6 @@ COPY backend/package*.json ./backend/
 RUN cd backend && npm install
 COPY backend/app.js ./backend/
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["node", "./backend/app.js"]
