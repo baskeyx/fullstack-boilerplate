@@ -14,8 +14,8 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "frontend": "cd frontend && yarn start",
+    "frontend": "cd.. && cd frontend && npm start",
     "backend": "nodemon app.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn run backend\" \"yarn run frontend\""
+    "dev": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\""
   }
 }
