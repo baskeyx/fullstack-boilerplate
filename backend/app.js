@@ -8,7 +8,7 @@ console.log(process.env);
 console.log('test');
 
 app.get('/api', (req, res) => {
-  res.send({copy: 'Hello World!'});
+  res.send({copy: 'Deployed via CodePipeline via Github!'});
 });
 
 app.listen(port, () => {
@@ -25,3 +25,6 @@ if (ENVIRONMENT !== 'DEV') {
 
 // docker build -t fullstack-boilerplate .
 // docker run --name dbtest -p 8080 fullstack-boilerplate
+
+// eb init
+// eb create
